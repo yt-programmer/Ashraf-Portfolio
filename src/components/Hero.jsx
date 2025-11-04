@@ -21,6 +21,7 @@ const Hero = () => {
   return (
     <section className=" flex items-center justify-center min-h-screen   ">
       <video
+        loading="lazy"
         src={video}
         autoPlay
         loop
