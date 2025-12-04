@@ -27,7 +27,7 @@ const Links = [
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="backdrop-blur-sm fixed w-full z-10 text-white">
+    <header className="backdrop-blur-sm fixed w-full z-10 text-gray-950 shadow-md">
       <div className="py-[15px] px-[20px] container mx-auto flex items-center justify-between">
         <a href="/" className="font-special text-[1.2rem] font-medium">
           Ashraf Hatem
@@ -36,7 +36,7 @@ const Header = () => {
           {Links.map((link) => (
             <li
               key={link.name}
-              className={` hover:translate-y-0.5 hover:text-[#6E8CFB] w-fit transition-all duration-300 `}
+              className={` hover:translate-y-0.5 hover:text-[#1B3C53] w-fit transition-all duration-300 `}
             >
               <a href={link.href}>{link.name}</a>
             </li>
