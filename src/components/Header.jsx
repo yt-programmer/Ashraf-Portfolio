@@ -18,10 +18,6 @@ const Links = [
     name: "Contact",
     href: "#contact",
   },
-  {
-    name: "FAQ",
-    href: "#faq",
-  },
 ];
 
 const Header = () => {

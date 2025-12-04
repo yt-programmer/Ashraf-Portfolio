@@ -19,7 +19,10 @@ const info = [
 
 const Hero = () => {
   return (
-    <section className=" flex items-center justify-center h-screen  relative overflow-hidden">
+    <section
+      id="home"
+      className=" flex items-center justify-center h-screen  relative overflow-hidden"
+    >
       <video
         loading="lazy"
         src={video}

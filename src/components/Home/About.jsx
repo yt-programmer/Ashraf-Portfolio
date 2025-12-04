@@ -4,7 +4,7 @@ import Ashraf from "../../assets/Ashraf.webp";
 import { motion } from "framer-motion";
 const About = ({ styleSection }) => {
   return (
-    <section className={styleSection}>
+    <section className={styleSection} id="about">
       <SectionTitle name={"About "} span={"Me"} />
       <div className="container px-[20px]  mx-auto flex flex-col md:flex-row  items-center justify-between gap-10 mt-10">
         <motion.div
