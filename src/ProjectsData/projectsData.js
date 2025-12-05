@@ -10,6 +10,13 @@ import project9 from "../assets/project9.webp";
 import project10 from "../assets/project10.webp";
 import project11 from "../assets/project11.webp";
 import project12 from "../assets/project12.webp";
+import project13 from "../assets/project13.webp";
+import project14 from "../assets/project14.webp";
+import project15 from "../assets/project15.webp";
+import project16 from "../assets/project16.webp";
+import project17 from "../assets/project17.webp";
+import project18 from "../assets/project18.webp";
+import project19 from "../assets/project19.mp4";
 
 export const data = [
   {
@@ -59,5 +66,33 @@ export const data = [
   {
     id: 12,
     img: project12,
+  },
+  {
+    id: 13,
+    img: project13,
+  },
+  {
+    id: 14,
+    img: project14,
+  },
+  {
+    id: 15,
+    img: project15,
+  },
+  {
+    id: 16,
+    img: project16,
+  },
+  {
+    id: 17,
+    img: project17,
+  },
+  {
+    id: 18,
+    img: project18,
+  },
+  {
+    id: 19,
+    img: project19,
   },
 ];

@@ -13,16 +13,31 @@ const Projects = ({ styleSection }) => {
       <div className="container px-[20px] mx-auto ">
         <div className="md:block hidden">
           <ImageList variant="woven" cols={3} gap={8}>
-            {data.map((item) => (
-              <ImageListItem
-                key={item.id}
-                className="hover:scale-50 transition-all duration-500"
-              >
-                <img src={item.img} alt="error" loading="lazy" />
-              </ImageListItem>
-            ))}
+            {data.map((item) => {
+              return (
+                <ImageListItem key={item.id}>
+                  {item.id === 19 ? (
+                    <video
+                      src={item.img}
+                      alt="error"
+                      className="w-full h-auto object-fill"
+                      loading="lazy"
+                      controls
+                    />
+                  ) : (
+                    <img
+                      src={item.img}
+                      alt="error"
+                      className="w-full h-auto object-fill hover:scale-50 transition-all duration-500"
+                      loading="lazy"
+                    />
+                  )}
+                </ImageListItem>
+              );
+            })}
           </ImageList>
         </div>
+
         <div className="md:hidden block">
           <ul className="flex flex-col items-center justify-center">
             {data.map((item) => (
@@ -30,12 +45,22 @@ const Projects = ({ styleSection }) => {
                 key={item.id}
                 className="mb-4 hover:translate-y-8  transition-all duration-300"
               >
-                <img
-                  src={item.img}
-                  alt="error"
-                  className="max-w-[300px] h-auto object-fill"
-                  loading="lazy"
-                />
+                {item.id === 19 ? (
+                  <video
+                    src={item.img}
+                    alt="error"
+                    className="max-w-[300px] h-auto object-fill"
+                    loading="lazy"
+                    controls
+                  />
+                ) : (
+                  <img
+                    src={item.img}
+                    alt="error"
+                    className="max-w-[300px] h-auto object-fill"
+                    loading="lazy"
+                  />
+                )}
               </li>
             ))}
           </ul>
